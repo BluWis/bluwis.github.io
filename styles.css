@@ -1,0 +1,206 @@
+/* General styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Section spacing */
+section {
+  padding: 60px 0;
+}
+
+/* Hero section */
+.hero-gradient {
+  background: linear-gradient(to right, #2F75FF, #063EC0);
+  color: white;
+  padding: 100px 0;
+  /* border-radius: 0 0 20px 20px; */
+}
+
+.navbar-hero{
+  background: linear-gradient(to right, #2F75FF, #063EC0);
+  color: white;
+}
+
+.hero-gradient .btn {
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/* Navbar */
+.navbar {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: lightblue;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  padding: 25px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card icons */
+.card-icon {
+  font-size: 2rem;
+  color: #2F75FF;
+  margin-bottom: 10px;
+}
+
+/* Call-to-action section */
+.cta-section {
+  background-color: #ffffff;
+  /* border-radius: 12px; */
+  padding: 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #001b5e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-outline-primary {
+  border-color: #2F75FF;
+  color: #2F75FF;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2F75FF;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #2F75FF;
+  border-color: #2F75FF;
+}
+
+.btn-primary:hover {
+  background-color: #063EC0;
+  border-color: #063EC0;
+}
+
+/* Carousel customization */
+.carousel-inner .card {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2F75FF;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #f1f5ff;
+  color: #063EC0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2F75FF;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-left: 4px solid #2F75FF;
+  padding: 1.5rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.card-style {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.section-divider {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #2F75FF, #063EC0);
+  margin: 60px 0 40px;
+  border-radius: 2px;
+}
+
+.callout {
+  background-color: #f1f5ff;
+  /* border-left: 4px solid #2F75FF; */
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.solution-highlight {
+  background-color: #f1f5ff;
+  border-left: 5px solid #2F75FF;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
+  max-width: 850px;
+  margin: 60px auto 0;
+}
+
+.solution-highlight h4 {
+  font-weight: 700;
+  color: #063EC0;
+}
+
+.solution-highlight p.lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* Hero logo */
+.hero-logo {
+  max-width: 700px;    /* adjust to your logo's ideal width */
+  width: 100%;         /* responsive */
+  height: auto;        /* maintain aspect ratio */
+  display: block;      /* remove any inline-spacing */
+  margin: 0 auto;      /* center within the .container */
+  margin-top: 2%;
+}
+
+.about-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
