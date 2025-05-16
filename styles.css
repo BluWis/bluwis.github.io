@@ -6,26 +6,31 @@ body {
   line-height: 1.6;
 }
 
+::selection {
+color: white; /* Text color */
+background: #063EC0; /* Background color */
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* Section spacing */
 section {
   padding: 60px 0;
 }
 
 /* Hero section */
-.hero-gradient {
+.hero-gradient,
+.navbar-hero,
+.hero-section,
+.hero-image-only-section {
   background: linear-gradient(to right, #2F75FF, #063EC0);
+  /* background-color: #2F75FF; */
   color: white;
-  padding: 100px 0;
-  /* border-radius: 0 0 20px 20px; */
 }
 
-.navbar-hero{
-  background: linear-gradient(to right, #2F75FF, #063EC0);
-  color: white;
+.hero-gradient {
+  padding: 100px 0;
 }
 
 .hero-gradient .btn {
@@ -33,32 +38,55 @@ section {
   border-radius: 30px;
 }
 
+.hero-section {
+  min-height: 70vh;
+}
+
+.hero-image-only-section {
+  min-height: 60vh;
+}
+
 /* Navbar */
 .navbar {
   font-weight: 600;
   font-size: 0.95rem;
+  background-color: #FAFAFA;
 }
 
 .navbar-nav .nav-link {
   margin-left: 15px;
-  color: white;
+  color: black;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: lightblue;
+  color: #2F75FF !important;
 }
 
 /* Cards */
-.card {
-  background-color: white;
+.card, .card-style, .vision-card, .challenge-card, .apart-card {
+  background-color: #fff;
   border: none;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
   padding: 25px;
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card-style {
+  padding: 30px;
+  margin-top: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
+}
+
+.vision-card {
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+}
+
+.card:hover,
+.vision-card:hover,
+.challenge-card:hover,
+.apart-card:hover {
   transform: translateY(-5px);
 }
 
@@ -69,14 +97,13 @@ section {
   margin-bottom: 10px;
 }
 
-/* Call-to-action section */
+/* CTA section */
 .cta-section {
-  background-color: #ffffff;
-  /* border-radius: 12px; */
+  background-color: #fff;
   padding: 5%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   margin-top: 40px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Footer */
@@ -122,6 +149,7 @@ footer {
   padding: 10px;
 }
 
+/* Accordion */
 .accordion-button {
   font-weight: 600;
   font-size: 1.1rem;
@@ -141,14 +169,7 @@ footer {
   border-radius: 0 0 12px 12px;
 }
 
-.card-style {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
-  padding: 30px;
-  margin-top: 10px;
-}
-
+/* Section Divider */
 .section-divider {
   width: 100%;
   height: 3px;
@@ -157,9 +178,9 @@ footer {
   border-radius: 2px;
 }
 
+/* Callout & Highlights */
 .callout {
   background-color: #f1f5ff;
-  /* border-left: 4px solid #2F75FF; */
   padding: 1rem 1.5rem;
   border-radius: 8px;
   margin-top: 1rem;
@@ -171,9 +192,9 @@ footer {
   border-left: 5px solid #2F75FF;
   border-radius: 12px;
   padding: 40px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
   max-width: 850px;
   margin: 60px auto 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
 }
 
 .solution-highlight h4 {
@@ -186,21 +207,279 @@ footer {
   line-height: 1.7;
 }
 
-/* Hero logo */
+/* Images */
 .hero-logo {
-  max-width: 700px;    /* adjust to your logo's ideal width */
-  width: 100%;         /* responsive */
-  height: auto;        /* maintain aspect ratio */
-  display: block;      /* remove any inline-spacing */
-  margin: 0 auto;      /* center within the .container */
-  margin-top: 2%;
+  max-width: 500px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 2% auto 0;
 }
 
 .about-image {
-  height: 100%;
-  width: 100%;
+  max-height: fit-content;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-img {
+  max-width: 90%;
+  height: auto;
+}
+
+.hero-illustration,
+.hero-illustration-only {
+  /* width: 100%; */
+  height: auto;
+  opacity: 0.95;
+  transition: transform 0.3s ease;
+}
+
+.hero-illustration {
+  max-width: 350px;
+}
+
+.hero-illustration-only {
+  max-width: 200px;
+  opacity: 0.97;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+.hero-illustration-only:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .hero-illustration {
+    max-width: 0;
+    margin-bottom: 2%;
+  }
+
+  .hero-section {
+    min-height: 0;
+  }
+
+  .hero-illustration-only {
+    max-width: 370px;
+  }
+}
+
+/* Principle section */
+.principles-illustration {
+  position: relative;
+}
+
+.principle-img {
+  max-width: 180px;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.93;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.principle-img:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.principle-hero-img {
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+}
+
+.principle-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.principle-icon path {
+  fill: var(--bs-primary);
+}
+
+/* Icons */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVGs */
+.problem-svg,
+.apart-svg {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Badges */
+.challenge-badge {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-image-only-section {
+  background: linear-gradient(to right, #2F75FF, #063EC0);
+  min-height: 0vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero-image-only-section h1 {
+  font-size: 2.5rem;
+}
+
+.hero-image-only-section p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.hero-illustration-only {
+  max-width: 300px;
+  /* width: 100%; */
+  height: auto;
+  opacity: 0.97;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.hero-illustration-only:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 576px) {
+  .hero-image-only-section h1 {
+    font-size: 1.85rem;
+  }
+  .hero-illustration-only {
+    max-width: 200px;
+  }
+}
+
+
+/* Clickable header styling */
+.clickable-header {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-bottom: 1px solid #eee;
+}
+
+.clickable-header:hover {
+  background-color: #f9f9f9;
+}
+
+/* Chevron toggle rotation */
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate chevron when open */
+.card .collapse.show + .card-body .toggle-icon,
+.card .collapse.show ~ .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* For dynamic chevron rotation using JavaScript (fallback for ~ selector) */
+.collapsing,
+.collapse.show {
+  transition: height 0.3s ease;
+}
+
+.card-img-top{
+  padding: 3%;
+  max-width: 40%;
+}
+
+.migration-card{
+  max-width: 34%;
+}
+
+.continuity-card{
+  padding: 0;
+  max-width: 27.5%;
+}
+
+/* Hero Carousel Custom Styles */
+#heroCarousel {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-carousel-slide {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  /* Shrink the slide height a bit so captions don’t run off */
+  #heroCarousel .hero-carousel-slide {
+    height: 70vh;
+  }
+
+  /* Tighter caption container */
+  #heroCarousel .carousel-caption {
+    bottom: 15%;
+    padding: 0.75rem 1rem;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.35); /* optional semi-transparent bg for readability */
+    border-radius: 0.5rem;
+  }
+
+  /* Smaller headings & lead text */
+  #heroCarousel .carousel-caption h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+  }
+  #heroCarousel .carousel-caption p.lead {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Tweak buttons */
+  #heroCarousel .carousel-caption .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
