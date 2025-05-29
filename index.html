@@ -43,7 +43,7 @@
             <a class="nav-link" href="#principles">Principles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#challenges">Challenges</a>
+            <a class="nav-link" href="#challenges">Why Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -55,6 +55,7 @@
       </div>
     </div>
   </nav>
+
 
 <!-- Hero Carousel -->
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
@@ -122,8 +123,9 @@
       <div class="row align-items-center g-5 flex-lg-row-reverse">
         <!-- Image -->
         <div class="col-lg-6 text-center">
-          <img src="assets/illustrations/undraw_engineering-team_13ax.svg" alt="BluWis team vision illustration"
-            class="img-fluid about-img" />
+          <!-- <img src="assets/stock/Professional_Woman_Portrait-removebg-preview.png" alt="BluWis team vision illustration"
+            class="img-fluid about-image" /> -->
+          <img src="assets/stock/Digital Global Network Map.jpeg" class="about-image img-fluid">
         </div>
 
         <!-- Text Content -->
@@ -136,11 +138,13 @@
               intelligent adoption of Cloud, Data, and AI/ML solutions—crafted
               to drive strategic business outcomes.
             </p>
-            <p class="callout">
-              Our edge lies in harmonizing modern SAP landscapes with
+            <div class="callout">
+              <p>
+              <strong>Our edge</strong> lies in harmonizing modern SAP landscapes with
               cutting-edge technologies, enabling our clients to modernize,
               scale, and lead in an era of constant disruption.
-            </p>
+              </p>
+            </div>
           </div>
 
           <!-- Vision & Mission -->
@@ -182,19 +186,20 @@
   </section>
 
   <!-- Leadership Principles -->
-  <section id="principles" class="py-5 bg-white position-relative overflow-hidden">
+  <section id="principles" class="py-5 bg-light position-relative overflow-hidden">
     <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+      <div class="row align-items-center mb-5 text-lg-start">
+        <!-- <div class="col-lg-3 col-md-0 col-sm-0"></div> -->
+        <div class="col-lg-4 text-center order-1 text-lg-start">
+          <img src="assets/stock/Professional Handshake in Corridor.jpeg" alt="Stylized leadership illustration"
+            class="leadership-img" style="margin-bottom: 25px;"/>
+        </div>
+        <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0 order-2">
           <h2 class="fw-bold display-5">Our Leadership Principles</h2>
           <p class="lead text-muted">
             Timeless values that guide every decision, hire, and strategy we
             pursue.
           </p>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="assets/illustrations/undraw_visionary-technology_6ouq.svg" alt="Stylized leadership illustration"
-            class="principle-hero-img" />
         </div>
       </div>
 
@@ -270,10 +275,10 @@
     <div class="container">
       <!-- Intro Row with Image on the Left -->
       <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center mb-4 mb-lg-0">
-          <img src="assets/illustrations/undraw_problem-solving_8lg7.svg" alt="Problem solving illustration" class="principle-hero-img" />
+        <div class="col-lg-2 text-center mb-4 mb-lg-0 text-lg-start">
+          <img src="assets/stock/Binary Code Wave.jpeg" alt="Problem solving illustration" class="challenge-img" />
         </div>
-        <div class="col-lg-6 text-center text-lg-end">
+        <div class="col-lg-10 text-center text-lg-start">
           <h2 class="fw-bold display-5">The Problem We Solve</h2>
           <p class="lead text-muted">
             Modern enterprises face SAP challenges that demand more than
@@ -366,20 +371,33 @@
   <section id="what-sets-us-apart" class="py-5 bg-light position-relative overflow-hidden">
     <div class="container">
       <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0">
           <h2 class="fw-bold display-5">What Sets Us Apart</h2>
           <p class="lead text-muted">
             We deliver business outcomes through SAP expertise—leveraging
             cloud, data, AI, and ML to drive innovation and client success.
           </p>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="assets/illustrations/undraw_product-iteration_r2wg.svg" alt="Illustration representing product innovation"
-            class="principle-hero-img" />
+        <div class="col-lg-4 text-center">
+          <img src="assets/stock/Office Meeting Scene.jpeg" class="about-image img-fluid" />
         </div>
       </div>
 
       <div class="row g-4 text-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-puzzle-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Designed for Impact</h5>
+              <p>
+                Every BluWis engagement aligns SAP technology with your
+                business goals—ensuring strategic success.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm principle-card">
             <div class="card-body">
@@ -448,19 +466,6 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm principle-card">
-            <div class="card-body">
-              <i class="bi bi-puzzle-fill fs-2 text-primary"></i>
-              <h5 class="fw-bold mt-3">Designed for Impact</h5>
-              <p>
-                Every BluWis engagement aligns SAP technology with your
-                business goals—ensuring strategic success.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -486,18 +491,29 @@
   <!-- Services Cards with Dropdowns -->
   <section id="services" class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center fw-bold mb-5">Our Services</h2>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0 text-lg-start">
+          <img src="assets/stock/Business Meeting in Modern Conference Room.jpeg" alt="Problem solving illustration" class="challenge-img" />
+        </div>
+        <div class="col-lg-8 text-center text-lg-start">
+          <h2 class="fw-bold display-5">Our Services</h2>
+          <p class="lead text-muted">
+            We empower enterprises with end-to-end SAP solutions, driving innovation, agility, and measurable business outcome
+          </p>
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="assets/illustrations/services/undraw_analyze_0hyg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#advisoryCard">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#advisoryCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-lightning-charge-fill me-2"></i> Advisory &
-                  Assessment Services</span>
+                <span class="service-title"><strong>Advisory &
+                  Assessment Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -535,16 +551,18 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center" data-bs-toggle="collapse"
               data-bs-target="#implementationCard">
-              <img src="assets/illustrations/services/undraw_resume-folder_hf4p.svg" class="card-img-top" alt="...">
+              <div class="text-center">
+                <i class="bi bi-tools fs-1 text-primary"></i>
+              </div>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#implementationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-tools me-2"></i> Implementation
-                  Services</span>
+                <span class="service-title"> <strong>Implementation
+                  Services </strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -586,15 +604,15 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="assets/illustrations/services/undraw_files-uploading_qf8u.svg" class="card-img-top migration-card" alt="..." data-bs-toggle="collapse" data-bs-target="#migrationCard">
+              <i class="bi bi-box-arrow-up-right fs-1 text-primary" data-bs-toggle="collapse" data-bs-target="#migrationCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#migrationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-box-arrow-up-right me-2"></i>S4HANA
-                  Migration Services</span>
+                <span class="service-title"> <strong>S4HANA
+                  Migration Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -631,14 +649,14 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="assets/illustrations/services/undraw_server-status_f685.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#integrationCard">
+              <i class="bi bi-plug fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#integrationCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#integrationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-plug me-2"></i> Integration Services</span>
+                <span class="service-title"> <strong>Integration Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -672,14 +690,14 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#securityCard">
               <div class="text-center">
-                <img src="assets/illustrations/services/undraw_security-on_btwg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#securityCard">
+                <i class="bi bi-shield-lock-fill fs-1 text-primary" data-bs-toggle="collapse" data-bs-target="#securityCard"></i>
               </div>
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-shield-lock-fill me-2"></i> SAP Test
-                  Automation & Security</span>
+                <span class="service-title"><strong>SAP Test
+                  Automation & Security </strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -713,15 +731,15 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="assets/illustrations/services/construction-site-5.svg" class="card-img-top continuity-card" alt="..." data-bs-toggle="collapse" data-bs-target="#continuityCard">
+              <i class="bi bi-life-preserver fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#continuityCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#continuityCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-life-preserver me-2"></i> Business
-                  Continuity Support</span>
+                <span class="service-title"> <strong>Business
+                  Continuity Support</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -758,14 +776,14 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#digitalCard">
               <div class="text-center">
-                <img src="assets/illustrations/services/undraw_server_9eix.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#digitalCard">
+                <i class="bi bi-cloud-upload-fill fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#digitalCard"></i>
               </div>
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-cloud-upload-fill me-2"></i> Digital &
-                  Cloud Services</span>
+                <span class="service-title"><strong>Digital &
+                  Cloud Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -807,7 +825,7 @@
   <!-- Contact -->
   <section id="contact" class="hero-gradient text-white text-start py-5">
     <div class="row container">
-      <div class="container col-lg-9 p-3 order-2">
+      <div class="container col-lg-8 p-3 order-2">
         <h4 class="fw-bold">Let’s Drive SAP-Powered Impact</h4>
         <p>
           Turn your SAP investments into measurable outcomes—through
@@ -825,11 +843,17 @@
         </p>
         <a href="#services" class="btn btn-light px-4 py-2 mt-3 rounded-pill fw-semibold">Explore Our Services</a>
       </div>
-      <div class="container col-lg-3 text-end order-1 align-middle">
-        <img src="assets/illustrations/calling-94.svg" alt="Illustration representing contact" class="principle-hero-img" />
+      <div class="container col-lg-4 text-end order-1 align-middle text-center">
+        <img src="assets/stock/Business Handshake Scene.jpeg" alt="Illustration representing contact" class="contact-img" />
       </div>
     </div>
   </section>
+
+
+  <!-- Scroll to Top Button -->
+<a href="#" class="btn btn-primary btn-lg rounded-circle scroll-to-top" aria-label="Scroll to top">
+  <i class="bi bi-arrow-up"></i>
+</a>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -839,6 +863,19 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
